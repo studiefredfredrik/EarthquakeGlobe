@@ -6,6 +6,8 @@ The project is made in C# with Unity3D.
 ![EarthquakeGlobe](http://static.skipwhippet.com/Earthquake/screenshot.png "EarthquakeGlobe screenshot")
 [A demo WebGL build can be found here](http://static.skipwhippet.com/Earthquake/) (be patient, the current build takes a while to load)
 
+Supports mouse look and scrollwheel zoom. Also pinch-zoom on mobile (touch move is not currently implemented)
+
 
 
 
