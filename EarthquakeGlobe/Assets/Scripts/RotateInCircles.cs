@@ -3,7 +3,7 @@
 public class RotateInCircles : MonoBehaviour {
 
     private float angle = 0;
-    public float speed = 2;        //2*PI in degress is 360, so you get 5 seconds to complete a circle
+    public float speed = 2;        // Note to self: 2*PI is 360 degrees
     public float radius = 5;
     public Transform lookAtTarget;
     public Transform transformTarget;
@@ -11,7 +11,7 @@ public class RotateInCircles : MonoBehaviour {
     void Update()
     {
         var trueSpeed = (2 * Mathf.PI) / (1 / speed);
-        angle += trueSpeed * Time.deltaTime;            //if you want to switch direction, use -= instead of +=
+        angle += trueSpeed * Time.deltaTime;            
         var x = Mathf.Cos(angle) * radius;
         var z = Mathf.Sin(angle) * radius;
         var y = transform.position.y;
